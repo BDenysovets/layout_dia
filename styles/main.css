@@ -623,7 +623,8 @@ body {
           transform: rotate(-65deg);
   border-radius: 64px;
   border: 1px solid #56ccf2;
-  background-color: transparent; }
+  background-color: transparent;
+  opacity: 0.5; }
 
 .item-small:nth-of-type(1) {
   top: 100px;
@@ -649,7 +650,8 @@ body {
           transform: rotate(-65deg);
   border-radius: 64px;
   border: 2px solid #fcc91d;
-  background-color: transparent; }
+  background-color: transparent;
+  opacity: 0.5; }
 
 .item-medium:nth-of-type(5) {
   top: 150px;
@@ -675,7 +677,8 @@ body {
           transform: rotate(-65deg);
   border-radius: 64px;
   border: 3px solid #15d850;
-  background-color: transparent; }
+  background-color: transparent;
+  opacity: 0.5; }
 
 .item-large:nth-of-type(9) {
   top: 200px;
@@ -717,7 +720,7 @@ body {
     font-size: 32px; }
   .footer__nav {
     position: absolute;
-    bottom: 80px;
+    bottom: 50px;
     left: 0;
     right: 0;
     display: -webkit-box;
