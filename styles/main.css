@@ -50,7 +50,8 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f2f9ff; }
+  background-color: #f2f9ff;
+  overflow-x: hidden; }
 
 .section-wrapper {
   margin: 0 auto;
@@ -159,7 +160,7 @@ body {
     display: none; }
   .header__content {
     position: relative;
-    top: 250px;
+    top: 200px;
     width: 39%;
     -webkit-transition: -webkit-transform 0.6s;
     transition: -webkit-transform 0.6s;
