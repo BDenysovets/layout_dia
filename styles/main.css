@@ -492,7 +492,7 @@ body {
     -ms-flex-preferred-size: 265px;
         flex-basis: 265px;
     padding: 30px;
-    border-radius: 12px;
+    border-radius: 30px;
     text-align: center;
     cursor: pointer;
     -webkit-transition: background-color 0.6s;
