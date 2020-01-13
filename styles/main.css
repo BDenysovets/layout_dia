@@ -283,12 +283,9 @@ body {
 @media (max-width: 850px) {
   .header .navigation {
     position: absolute;
-    left: 20px;
     top: 150px;
-    -webkit-transition: -webkit-transform 0.6s;
-    transition: -webkit-transform 0.6s;
-    transition: transform 0.6s;
-    transition: transform 0.6s, -webkit-transform 0.6s; }
+    -webkit-transition: left 0.6s;
+    transition: left 0.6s; }
     .header .navigation__list {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
@@ -327,16 +324,16 @@ body {
     top: 20%;
     margin: 0 auto;
     width: 90%;
-    text-align: center; }
+    text-align: center;
+    -webkit-transition: right 0.6s;
+    transition: right 0.6s; }
   .header__item {
     position: absolute;
     bottom: 80px;
     left: 20px;
     font-size: 35px;
-    -webkit-transition: -webkit-transform 0.6s;
-    transition: -webkit-transform 0.6s;
-    transition: transform 0.6s;
-    transition: transform 0.6s, -webkit-transform 0.6s; }
+    -webkit-transition: left 0.6s;
+    transition: left 0.6s; }
     .header__item:hover::after, .header__item:focus::after {
       bottom: 58px; } }
 
@@ -355,23 +352,20 @@ body {
 
 @media (max-width: 850px) {
   .header--closed .navigation {
-    -webkit-transform: translateX(-500px);
-            transform: translateX(-500px); }
+    left: -600px; }
   .header--closed .header__item {
-    -webkit-transform: translateX(-300px);
-            transform: translateX(-300px); }
+    left: -500px; }
+  .header--closed .header__content {
+    right: 0; }
   .header--opened {
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px; }
     .header--opened .navigation {
-      -webkit-transform: translateX(0);
-              transform: translateX(0); }
+      left: 20px; }
     .header--opened .header__item {
-      -webkit-transform: translateX(0);
-              transform: translateX(0); }
+      left: 20px; }
     .header--opened .header__content {
-      -webkit-transform: translateX(800px);
-              transform: translateX(800px); }
+      right: -800px; }
   .slider {
     display: none; } }
 
