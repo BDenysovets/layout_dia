@@ -606,11 +606,10 @@ body {
       background-color: rgba(32, 96, 246, 0.1); }
     .step-list__item .step-list__link {
       background-color: #2060f6; }
-    .step-list__item .services-list__item:not(:last-of-type) {
-      margin-bottom: 5px; }
-    .step-list__item .services-list__text {
+    .step-list__item__text:not(:last-of-type) {
       font-family: "OpenSans", sans-serif;
       font-weight: 600;
+      line-height: 150%;
       font-size: 13px;
       color: #6c788b; }
   .step-list__item:nth-child(odd) {
@@ -820,7 +819,7 @@ body {
     letter-spacing: 3px;
     text-transform: uppercase; }
   .testimonials__title {
-    margin: 0 auto 85px;
+    margin-bottom: 85px;
     max-width: 180px; }
   .testimonials__list {
     display: -webkit-box;
@@ -907,6 +906,8 @@ body {
       padding: 70px 20px; }
     .testimonials__wrapper {
       text-align: center; }
+    .testimonials__title {
+      margin: 0 auto 85px; }
     .testimonials__list {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
@@ -1021,6 +1022,10 @@ body {
 .item-large:nth-of-type(11) {
   top: 40%;
   left: 20%; }
+
+.item-large:nth-of-type(12) {
+  top: 55%;
+  left: 5%; }
 
 .footer {
   background-color: #fff; }
