@@ -486,8 +486,12 @@ body {
     .greeting__content {
       width: 100%; } }
   @media (max-width: 500px) {
+    .greeting {
+      padding: 75px 20px; }
+    .greeting__title {
+      font-size: 20px; }
     .greeting__text {
-      font-size: 20px; } }
+      font-size: 16px; } }
 
 .work {
   padding: 148px 20px;
@@ -540,6 +544,11 @@ body {
               justify-content: center; }
     .work__item {
       margin: 30px 20px; } }
+  @media (max-width: 850px) {
+    .work {
+      padding: 30px 20px; }
+    .work__list {
+      margin-top: 0; } }
 
 .process {
   padding: 230px 20px 0; }
@@ -582,6 +591,12 @@ body {
               flex-direction: column; }
     .process__desc {
       text-align: center; } }
+  @media (max-width: 850px) {
+    .process {
+      padding: 70px 20px 0; } }
+  @media (max-width: 500px) {
+    .process__title {
+      font-size: 20px; } }
 
 .step-list {
   display: -webkit-box;
@@ -618,6 +633,15 @@ body {
   .step-list__item:nth-child(even) {
     -webkit-transform: translateY(-80px);
             transform: translateY(-80px); }
+  .step-list .services-list__item:not(:last-of-type) {
+    margin-bottom: 5px; }
+  .step-list .services-list {
+    margin-bottom: 32px; }
+  .step-list .services-list__text {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color: #6c788b; }
   .step-list__count {
     padding: 0 8px;
     width: -webkit-fit-content;
@@ -628,13 +652,6 @@ body {
     font-size: 13px;
     font-weight: bold;
     line-height: 19px; }
-  .step-list__desc {
-    margin-bottom: 32px;
-    color: #6c788b;
-    font-family: "OpenSans", sans-serif;
-    font-size: 13px;
-    line-height: 150%;
-    font-weight: bold; }
   .step-list__link {
     display: inline-block;
     position: relative;
@@ -671,7 +688,7 @@ body {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      margin-top: 100px; }
+      margin-top: 50px; }
       .step-list__item:nth-child(odd) {
         -webkit-transform: translateY(0);
                 transform: translateY(0); }
@@ -777,7 +794,7 @@ body {
     .features {
       text-align: center; }
     .features__title {
-      margin-bottom: 50px; }
+      margin: 0 auto 35px; }
     .features__img {
       display: none; }
     .features__list {
@@ -789,7 +806,9 @@ body {
               transform: translateX(-50px); } }
   @media (max-width: 500px) {
     .features {
-      padding: 80px 20px; }
+      padding: 80px 20px;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px; }
     .features__title {
       font-size: 20px; }
     .features__list {
@@ -801,7 +820,7 @@ body {
           -ms-flex-direction: column;
               flex-direction: column; }
     .features__item::after {
-      border-radius: 16px; }
+      border-radius: 8px; }
     .features__item:hover::after {
       width: 105%;
       height: 115%; }
@@ -914,10 +933,17 @@ body {
               justify-content: center; }
     .testimonials__item {
       margin: 30px 20px; } }
+  @media (max-width: 850px) {
+    .testimonials {
+      padding: 40px 20px; }
+    .testimonials__title {
+      margin: 0 auto 40px; } }
   @media (max-width: 500px) {
     .testimonials__item {
       margin: 30px 0;
-      padding: 16px; } }
+      padding: 16px; }
+    .testimonials__title {
+      font-size: 20px; } }
 
 .vision {
   position: relative;
@@ -1027,6 +1053,10 @@ body {
   top: 55%;
   left: 5%; }
 
+@media (max-width: 500px) {
+  .vision__bg-item {
+    display: none; } }
+
 .footer {
   background-color: #fff; }
   .footer__outer {
@@ -1068,6 +1098,9 @@ body {
         -ms-flex-align: center;
             align-items: center; }
   @media (max-width: 850px) {
+    .footer__outer {
+      height: 100%;
+      padding: 60px 20px 200px; }
     .footer__item:first-child {
       -ms-flex-preferred-size: 50%;
           flex-basis: 50%; }
@@ -1096,7 +1129,6 @@ body {
         margin-right: 0; } }
   @media (max-width: 500px) {
     .footer__outer {
-      height: 100%;
       padding: 60px 20px 250px; }
     .footer__content {
       -webkit-box-orient: vertical;
