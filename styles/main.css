@@ -93,7 +93,7 @@ body {
   padding-bottom: 16px;
   border: none;
   border-bottom: 1px solid #fff;
-  background-color: transparent;
+  background-color: transparent !important;
   font-size: 15px;
   color: #fff;
   outline: none;
@@ -112,6 +112,11 @@ body {
   .form-input:active, .form-input:focus {
     border-bottom-width: 2px;
     border-bottom-color: #144ed5; }
+  .form-input:-webkit-autofill {
+    border-bottom: 2px solid #144ed5;
+    -webkit-text-fill-color: #fff !important;
+    -webkit-box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0) inset !important;
+    box-shadow: 0 0 0 1000px #2c2c2c inset !important; }
 
 .header {
   position: relative;
